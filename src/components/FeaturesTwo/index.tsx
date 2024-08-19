@@ -1,20 +1,22 @@
 import Link from "next/link";
 import SectionTitle from "../Common/SectionTitle";
 import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import featuretwoData from "./featuresData";
 
-const Features = () => {
+const FeatureTwo = () => {
   return (
     <>
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
+          <p>One platform. All your solutions.</p>
           <SectionTitle
-            title="Build the best payment experience for your customers"
-            paragraph="All supported by a dedicated team providing you all the support you need."
+            title="Supercharge your payment workflows"
+            paragraph=""
+            width="100%"
           />
 
           <div className="grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
+            {featuretwoData.map((feature) => (
               <SingleFeature key={feature.id} feature={feature} />
             ))}
           </div>
@@ -24,4 +26,4 @@ const Features = () => {
   );
 };
 
-export default Features;
+export default FeatureTwo;

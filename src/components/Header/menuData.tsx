@@ -3,31 +3,7 @@ import { Menu } from "@/types/menu";
 const menuData: Menu[] = [
   {
     id: 1,
-    title: "Home",
-    path: "/",
-    newTab: false,
-  },
-  {
-    id: 2,
-    title: "About",
-    path: "/about",
-    newTab: false,
-  },
-  {
-    id: 33,
-    title: "Blog",
-    path: "/blog",
-    newTab: false,
-  },
-  {
-    id: 3,
-    title: "Support",
-    path: "/contact",
-    newTab: false,
-  },
-  {
-    id: 4,
-    title: "Pages",
+    title: "Products",
     newTab: false,
     submenu: [
       {
@@ -76,6 +52,44 @@ const menuData: Menu[] = [
         id: 48,
         title: "Error Page",
         path: "/error",
+        newTab: false,
+      },
+    ],
+  },
+
+  {
+    id: 33,
+    title: "Why Revpay",
+    path: "/why-revpay",
+    newTab: false,
+  },
+  {
+    id: 3,
+    title: "Support",
+    path: "/contact",
+    newTab: false,
+  },
+  {
+    id: 4,
+    title: "Resources",
+    newTab: false,
+    submenu: [
+      {
+        id: 41,
+        title: "Company",
+        path: "/about",
+        newTab: false,
+      },
+      {
+        id: 42,
+        title: "Quick Help",
+        path: "/contact",
+        newTab: false,
+      },
+      {
+        id: 43,
+        title: "Blog",
+        path: "/blog",
         newTab: false,
       },
     ],
